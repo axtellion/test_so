@@ -1,0 +1,13 @@
+.nav {
+    padding-right: 134px;
+}
+
+.nav__link{
+    color: var(--second-text-color);
+    height: 102px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}

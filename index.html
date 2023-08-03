@@ -4,8 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Project</title>
+    <link href="fonts/stylesheet.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 <body>
-    
+    <header class="header container">
+        <div class="header__block--logo">
+            <img class="logo" src="./images/logo.jpg" alt="logo">
+        </div>
+        <div class="nav">
+        <ul class="nav__link">
+            <li class="nav__list">ГЛАВНАЯ</li>
+            <li class="nav__list">ГАЛЕРЕЯ</li>
+            <li class="nav__list">ПРОЕКТЫ</li>
+            <li class="nav__list">СЕРТИФИКАТЫ</li>
+            <li class="nav__list">КОНТАКТЫ</li>
+        </ul></div>
+    </header>
+    <main>
+        <section class="hero container">
+            <div class="hero__block">
+                <h1 class="hero__title">PROJECT <br><span class="hero__title-color">HOME</span></h1>
+                <button type="button" class="btn-arrow hero__button--left">
+                    <svg class="personal-date__icon" width="16" height="12">
+                        <use href="./images/icons.svg#icon-arrow-left"></use>
+                    </svg>
+                </button>
+                <button type="button" class="btn-arrow hero__button--right">
+                    <svg class="personal-date__icon" width="16" height="12">
+                        <use href="./images/icons.svg#icon-arrow-right"></use>
+                    </svg>
+                </button>
+                <div class="hero__number">01 / 02</div>
+            </div>
+            <div class="hero__img-block">
+                <img src="./images/hero.jpg" alt="hause">
+                <button type="button" class="hero__btn btn">
+                    ВЗГЛЯНУТЬ
+                <svg class="personal-date__icon" width="16" height="12">
+                    <use href="./images/icons.svg#icon-arrow-right"></use>
+                </svg>
+                </button>
+            </div>
+        </section>
+        <section class="container">
+            <div class="about">
+                <div class="about__block-img">
+                    <div class="about__block-img--left">
+                        <img src="./images/about_2.jpg" alt="project">
+                        <img class="about__img" src="./images/about_1.jpg" alt="project">
+                    </div>
+                    <div class="about__block-img--right">
+                        <img src="./images/about_3.jpg" width="270px" height="375px" alt="project">
+                    </div>
+                </div>
+                <div class="about__block">
+                    <h2 class="about__title">О компании</h2>
+                    <p class="about__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                    dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                    book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+                    unchanged.</p>
+                    <button type="button" class="about_btn btn">
+                        ЧИТАТЬ
+                    <svg class="personal-date__icon" width="16" height="12">
+                        <use href="./images/icons.svg#icon-arrow-right"></use>
+                    </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

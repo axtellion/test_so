@@ -1,0 +1,45 @@
+.hero{
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 120px;
+}
+
+.hero__block{
+    margin-top: 336px;
+}
+
+.hero__title{
+    color: var(--main-title-color);
+    font-size: 64px;
+    font-weight: 400;
+
+    margin-bottom: 90px;
+}
+
+.hero__title-color{
+    color: var(--second-title-color);
+    font-weight: 800;
+}
+
+.hero__button--right{
+   margin-bottom: 90px;
+}
+
+.hero__number{
+    font-size: 24px;
+    word-spacing: 26px;
+
+    color: var(--third-text-color);
+}
+
+.hero__img-block{
+    position: relative;
+}
+
+.hero__btn{
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+}

@@ -1,0 +1,48 @@
+.tasks{
+    margin-bottom: 120px;
+}
+
+.tasks__title{
+    font-size: 64px;
+    color: var(--main-title-color);
+
+    margin-bottom: 60px;
+}
+
+.tasks__list{
+    display: flex;
+    justify-content: space-between;
+   
+    gap: 187px;
+}
+
+.tasks__item{
+    height: 144px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    
+
+}
+
+.tasks__numb{
+display: block;
+font-size: 200px;
+font-weight: 800;
+
+    @font-face {
+        font-family: "SF Pro Display";
+        src: url("/fonts/sf/SF-Pro-Display-Black.ttf") format("ttf");
+    }
+}
+
+.tasks__text{
+   
+    line-height: 36px;
+    font-size: 22px;
+}
+
+.tasks__text-left{
+    width: 279px;
+}

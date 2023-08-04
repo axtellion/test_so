@@ -10,6 +10,15 @@
     gap: 30px;
 
     margin-bottom: 150px;
+
+    @media screen and (max-width: 768px) {
+        height: 380px;
+
+        padding: 0;
+        margin-bottom: 60px;
+
+        gap: 15px;
+        }
 }
 
 .about__block-img {
@@ -17,10 +26,17 @@
     display: flex;
 
     gap: 30px;
+    @media screen and (max-width: 768px) {
+        gap: 15px;
+        }
 }
 
 .about__block-img--left {
     position: relative;
+    :first-child{
+        width: 160px;
+        height: 300px;
+    }
 }
 
 .about__img{
@@ -32,6 +48,10 @@
 .about__block-img--right{
     display: flex;
     align-items: center;
+    img{
+        width: 150px;
+        height: 250px;
+    }
 }
 
 .about__block{
@@ -44,6 +64,10 @@
     color: var(--third-text-color);
 
     margin-bottom: 20px;
+
+    @media screen and (max-width: 768px) {
+        font-size: 32px;
+        }
 }
 
 .about__text{

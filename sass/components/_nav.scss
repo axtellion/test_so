@@ -1,5 +1,9 @@
 .nav {
     padding-right: 134px;
+
+    @media screen and (max-width: 768px) {
+           padding-right: 0;
+        }
 }
 
 .nav__list{

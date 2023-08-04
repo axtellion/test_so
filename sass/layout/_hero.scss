@@ -3,10 +3,17 @@
     justify-content: space-between;
 
     margin-bottom: 120px;
+
+    @media screen and (max-width: 768px) {
+            gap: 40px;
+        }
 }
 
 .hero__block{
     margin-top: 336px;
+    @media screen and (max-width: 768px) {
+            margin-top: 140px;
+        }
 }
 
 .hero__title{
@@ -15,6 +22,9 @@
     font-weight: 400;
 
     margin-bottom: 90px;
+    @media screen and (max-width: 768px) {
+            font-size: 32px;
+        }
 }
 
 .hero__title-color{
@@ -34,7 +44,14 @@
 }
 
 .hero__img-block{
+    width: 770px;
+    height: 829px;
     position: relative;
+
+    @media screen and (max-width: 768px) {
+            width: 565px;
+            height: 604px;
+        }
 }
 
 .hero__btn{
@@ -42,4 +59,7 @@
 
     left: 0;
     bottom: 0;
+    @media screen and (max-width: 768px) {
+            left: -1px;
+        }
 }

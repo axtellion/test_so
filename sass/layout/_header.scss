@@ -4,8 +4,14 @@
     flex-wrap: nowrap;
 
     font-size: 12px;
+    @media screen and (max-width: 768px) {
+            justify-content: space-between;
+        }
 }
 
 .header__block--logo{
     margin-right: 330px;
+    @media screen and (max-width: 768px) {
+            margin-right: 40px;
+        }
 }

@@ -3,4 +3,12 @@
     padding-left: 135px;
     padding-right: 135px;
     margin: 0 auto;
+    @media screen and (max-width: 768px) {
+        width: 768px;
+        padding-left: 15px;
+        padding-right: 15px;
+        }
+    @media screen and (max-width: 480px) {
+        width: 480px;
+        }
 }

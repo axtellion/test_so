@@ -1,5 +1,9 @@
 .tasks{
     margin-bottom: 120px;
+
+    @media screen and (max-width: 768px) {
+        margin-bottom: 60px;
+        }
 }
 
 .tasks__title{
@@ -7,6 +11,12 @@
     color: var(--main-title-color);
 
     margin-bottom: 60px;
+
+    @media screen and (max-width: 768px) {
+        font-size: 32px;
+
+        margin-bottom: 30px;
+        }
 }
 
 .tasks__list{
@@ -14,6 +24,10 @@
     justify-content: space-between;
    
     gap: 187px;
+
+    @media screen and (max-width: 768px) {
+            gap: 57px;
+        }
 }
 
 .tasks__item{
@@ -24,6 +38,10 @@
     gap: 30px;
     
 
+    @media screen and (max-width: 768px) {
+            height: 70px;
+            gap: 15px;
+        }
 }
 
 .tasks__numb{
@@ -35,12 +53,21 @@ font-weight: 800;
         font-family: "SF Pro Display";
         src: url("/fonts/sf/SF-Pro-Display-Black.ttf") format("ttf");
     }
+
+        @media screen and (max-width: 768px) {
+            font-size: 100px;
+        }
 }
 
 .tasks__text{
    
     line-height: 36px;
     font-size: 22px;
+
+    @media screen and (max-width: 768px) {
+            line-height: normal;
+            font-size: 16px;
+        }
 }
 
 .tasks__text-left{

@@ -9,6 +9,12 @@
 
             gap: 30px;
         }
+        @media screen and (max-width: 480px) {
+            flex-direction: column;
+            margin: 0 auto;
+
+            margin-bottom: 70px;
+        }
 }
 
 .info__left{

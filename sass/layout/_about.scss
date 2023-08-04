@@ -33,25 +33,40 @@
 
 .about__block-img--left {
     position: relative;
-    :first-child{
-        width: 160px;
-        height: 300px;
-    }
+    @media screen and (max-width: 768px) {
+        :first-child {
+            width: 160px;
+            height: 300px;
+            }
+        }
+            @media screen and (max-width: 480px) {
+                height: 200px;
+                }
 }
 
 .about__img{
     position: absolute;
     left: 0;
     bottom: -30px;
+
+    @media screen and (max-width: 480px) {
+           bottom: -190px;
+        }
 }
 
 .about__block-img--right{
     display: flex;
     align-items: center;
-    img{
-        width: 150px;
-        height: 250px;
-    }
+    @media screen and (max-width: 768px) {
+        img {
+            width: 150px;
+            height: 250px;
+            }
+        }
+            @media screen and (max-width: 480px) {
+                display: none;
+            }
+    
 }
 
 .about__block{

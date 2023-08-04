@@ -24,4 +24,13 @@
     @media screen and (max-width: 768px) {
            gap: 15px;
         }
+           @media screen and (max-width: 480px) {
+               justify-content: center;
+           }
+}
+
+.contact__img{
+    @media screen and (max-width: 480px) {
+            display: none;
+        }
 }

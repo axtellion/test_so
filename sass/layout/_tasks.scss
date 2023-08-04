@@ -28,6 +28,9 @@
     @media screen and (max-width: 768px) {
             gap: 57px;
         }
+            @media screen and (max-width: 480px) {
+                flex-direction: column;
+            }
 }
 
 .tasks__item{
@@ -42,6 +45,13 @@
             height: 70px;
             gap: 15px;
         }
+         @media screen and (max-width: 480px) {
+            justify-content: flex-start;
+
+            :first-child{
+                width: 60px;
+            }
+         }
 }
 
 .tasks__numb{

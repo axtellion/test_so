@@ -51,6 +51,10 @@
 
     color: white;
 
+    svg{
+        fill: white;
+    }
+
     p{
         line-height: 21px;
     }
@@ -58,4 +62,7 @@
 
 .info-contact__link:hover{
     color: var(--third-text-color);
+    svg {
+            fill: var(--third-text-color);
+        }
 }

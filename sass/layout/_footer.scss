@@ -1,0 +1,23 @@
+.footer__container{
+width: 1440px;
+padding-top: 58px;
+padding-bottom: 24px;
+margin: 0 auto;
+
+background-color: black;
+color: white;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 116px;
+    padding-right: 212px;
+    padding-bottom: 60px;
+}
+
+.footer__logo{
+    margin-right: 99px;
+
+    display: inline-block;
+}

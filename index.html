@@ -13,15 +13,17 @@
 <body>
     <header class="header container">
         <div class="header__block--logo">
-            <img class="logo" src="./images/logo.jpg" alt="logo">
+            <a href="/">
+                <img class="logo" src="./images/logo.jpg" alt="logo">
+            </a>
         </div>
         <div class="nav">
-        <ul class="nav__link">
-            <li class="nav__list">ГЛАВНАЯ</li>
-            <li class="nav__list">ГАЛЕРЕЯ</li>
-            <li class="nav__list">ПРОЕКТЫ</li>
-            <li class="nav__list">СЕРТИФИКАТЫ</li>
-            <li class="nav__list">КОНТАКТЫ</li>
+        <ul class="nav__list">
+            <li class="nav__item"><a href="/" class="nav__link nav--active">ГЛАВНАЯ</a></li>
+            <li class="nav__item"><a href="/" class="nav__link">ГАЛЕРЕЯ</a></li>
+            <li class="nav__item"><a href="/" class="nav__link">ПРОЕКТЫ</a></li>
+            <li class="nav__item"><a href="/" class="nav__link">СЕРТИФИКАТЫ</a></li>
+            <li class="nav__item"><a href="/" class="nav__link">КОНТАКТЫ</a></li>
         </ul></div>
     </header>
     <main>
@@ -127,6 +129,147 @@
                 </button>
                 </div>
         </section>
+        <section class="contact container">
+            <h2 class="contact__title">Связаться с нами</h2>
+            <div class="contact__box">
+            <div class="form__container">
+                <form action="#">
+                    <div class="form__wrap">
+                        <div class="form__box">
+                            <input type="text" id="user-name" name="user-name" placeholder="Имя" class="form__input" />
+                        </div>
+                    </div>
+                    <div class="form__wrap">
+                        <div class="form__box">
+                            <input type="tel" id="user-phone" name="user-phone" placeholder="Номер телефона" class="form__input" required />
+                            <span class="required-star">*</span>
+                        </div>
+                    </div>
+                    <div class="form__wrap">
+                        <div class="form__box">
+                            <input type="email" id="user-email" name="user-email" placeholder="E-mail" class="form__input" required />
+                            <span class="required-star">*</span>
+                        </div>
+                    </div>
+                    <div class="form__wrap">
+                        <div class="form__box">
+                            <input type="text" id="user-text" name="user-text" placeholder="Интересующий товар/услуга" class="form__input" />
+                        </div>
+                    </div>
+                    <div class="form__wrap wrap-space">
+                        <div class="form__box">
+                        <textarea name="form-comment" id="form-comment" class="form__input comment--textarea"
+                            placeholder="Сообщение"></textarea>
+                            <span class="required-star">*</span>
+                            </div>
+                    </div>
+                    <div class="form__wrap wrap-space">
+                        <input type="checkbox" name="policy" id="modal-check" class="check__input visually-hidden" />
+                        <label for="modal-check" class="check__label">
+                            <span class="check__box">
+                                Отправляя заявку Вы соглашаетесь c политикой конфиденциальности</label>
+                    </div>
+                    <div class="form-btn__wrap">
+                        <button type="submit" class="form__btn btn">
+                            Отправить
+                        <svg class="personal-date__icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-arrow-right"></use>
+                        </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div>
+                <img src="./images/сontact.jpg" alt="man" width="749px">
+            </div>
+            </div>
+        </section>
     </main>
+    <footer class="footer__container">
+       <div class="footer">
+        <div class="footer__logo">
+            <a href="/">
+                <img src="./images/logo-footer.png" alt="logo" width="145px" height="94px">
+            </a>
+        </div>
+        <div class="info">
+            <div class="info__left">
+                <h3 class="info__title">Информация</h3>
+                <ul class="info__list">
+                    <li class="info__item"><a class="info__link" href="/">Главная</a></li>
+                    <li class="info__item"><a class="info__link" href="/">Галерея</a></li>
+                    <li class="info__item"><a class="info__link" href="/">Проекты</a></li>
+                    <li class="info__item"><a class="info__link" href="/">Сертификаты</a></li>
+                    <li class="info__item"><a class="info__link" href="/">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="info__right">
+                <h3 class="info__title">Контакты</h3>
+                <ul class="info-contact__list">
+                    <li class="info-contact__item">
+                        <a class="info-contact__link" href="/">
+                            <svg class="personal-date__icon" width="22" height="17">
+                                <use href="./images/icons.svg#icon-map"></use>
+                        </svg>
+                       <p>100000, Республика Казахстан, <br> г. Караганда, ул. Телевизионная 10</p>
+                    </a>
+                </li>
+                    <li class="info-contact__item">
+                        <a class="info-contact__link" href="/">
+                            <svg class="personal-date__icon" width="22" height="17">
+                                <use href="./images/icons.svg#icon-phone"></use>
+                        </svg>
+                        <p>+38 (000) 000 00 00</p>
+                    </a>
+                </li>
+                    <li class="info-contact__item">
+                        <a class="info-contact__link" href="/">
+                            <svg class="personal-date__icon" width="22" height="17">
+                                <use href="./images/icons.svg#icon-mail"></use>
+                        </svg>
+                        <p>mail@gmail.com</p>
+                    </a>
+                </li>
+                </ul>
+            </div>
+        </div>
+        <div class="social">
+            <h3 class="social__title">Социальные сети</h3>
+            <ul class="social__list">
+                <li class="social__item">
+                    <a class="social__link" href="/">
+                        <svg class="personal-date__icon" width="22" height="17">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link" href="/">
+                        <svg class="personal-date__icon" width="22" height="17">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link" href="/">
+                        <svg class="personal-date__icon" width="22" height="17">
+                            <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link" href="/">
+                        <svg class="personal-date__icon" width="22" height="17">
+                            <use href="./images/icons.svg#icon-pininterest"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        </div>
+        <div class="copyright__box">
+            <p class="copyright">&#169; 2019 Digital Project. Все права защищены.</p>
+        </div>
+    </footer>
 </body>
 </html>

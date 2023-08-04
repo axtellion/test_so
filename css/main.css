@@ -5,7 +5,7 @@
   --first-text-color: #212121;
   --second-text-color: #333333;
   --third-text-color: #BDBDBD;
-  --accent-color: #2196f3;
+  --accent-color: #DCDCDC;
 }
 
 p,
@@ -62,13 +62,55 @@ a {
   padding-right: 134px;
 }
 
-.nav__link {
-  color: var(--second-text-color);
+.nav__list {
+  cursor: pointer;
   height: 102px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 60px;
+}
+
+.nav__item {
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.nav__link {
+  color: var(--second-text-color);
+}
+
+.nav__link.nav--active::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-top: 1px solid black;
+}
+
+.nav__link.nav--active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid black;
+}
+
+.nav__link:hover {
+  color: var(--third-text-color);
+}
+
+.nav__link:hover::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid black;
 }
 
 .btn-arrow {
@@ -80,6 +122,10 @@ a {
 .btn-arrow svg {
   width: 24px;
   height: 24px;
+}
+
+.btn-arrow:hover {
+  background-color: var(--accent-color);
 }
 
 .btn {
@@ -97,6 +143,190 @@ a {
 .btn svg {
   width: 24px;
   height: 24px;
+}
+
+.btn:hover {
+  background-color: var(--accent-color);
+}
+
+.form__container {
+  width: 391px;
+}
+
+.form__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+  color: #212121;
+}
+
+.form__wrap {
+  margin-bottom: 10px;
+}
+
+.wrap-space {
+  margin-bottom: 22px;
+}
+
+.form__input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding-left: 21px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form__input:hover, .form__input:focus {
+  border-color: var(--accent-color);
+}
+.form__input:hover + .form__svg, .form__input:focus + .form__svg {
+  fill: var(--accent-color);
+}
+
+.form__box {
+  position: relative;
+}
+
+.form__svg {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  outline: none;
+}
+
+.form__label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+
+.comment--textarea {
+  position: relative;
+  height: 147px;
+}
+
+.required-star {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  color: red;
+}
+
+.form__btn {
+  background-color: black;
+  color: white;
+}
+.form__btn svg {
+  fill: white;
+}
+
+.check__input {
+  cursor: pointer;
+}
+
+.check__box {
+  cursor: pointer;
+}
+
+.info {
+  display: flex;
+  gap: 157px;
+  margin-right: 90px;
+}
+
+.info__left {
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+}
+
+.info__right {
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+}
+
+.info__title {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.info__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.info__link {
+  color: white;
+}
+
+.info__link:hover {
+  color: var(--third-text-color);
+}
+
+.info-contact__list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.info-contact__link {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+  color: white;
+}
+.info-contact__link p {
+  line-height: 21px;
+}
+
+.info-contact__link:hover {
+  color: var(--third-text-color);
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.social__title {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.social__list {
+  display: flex;
+  gap: 40px;
+}
+
+.social__link svg {
+  width: 20px;
+  height: 20px;
+  fill: white;
+}
+
+.social__link:hover svg {
+  fill: var(--third-text-color);
+}
+
+.copyright__box {
+  border-top: 1px solid #C8C8C8;
+}
+
+.copyright {
+  color: #C8C8C8;
+  text-align: center;
+  padding-top: 24px;
 }
 
 .header {
@@ -336,4 +566,41 @@ a {
 }
 .project__btn svg {
   fill: white;
+}
+
+.contact {
+  margin-bottom: 120px;
+}
+
+.contact__title {
+  font-size: 64px;
+  color: var(--main-title-color);
+  margin-bottom: 22px;
+}
+
+.contact__box {
+  display: flex;
+  gap: 30px;
+}
+
+.footer__container {
+  width: 1440px;
+  padding-top: 58px;
+  padding-bottom: 24px;
+  margin: 0 auto;
+  background-color: black;
+  color: white;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 116px;
+  padding-right: 212px;
+  padding-bottom: 60px;
+}
+
+.footer__logo {
+  margin-right: 99px;
+  display: inline-block;
 }/*# sourceMappingURL=main.css.map */

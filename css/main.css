@@ -880,6 +880,7 @@ a {
 @media screen and (max-width: 480px) {
   .contact__box {
     justify-content: center;
+    gap: 0;
   }
 }
 
